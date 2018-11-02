@@ -27,7 +27,7 @@ describe('reverse strings and words', () => {
         const sentenceArray = []
         expect(reverseWords(sentenceArray)).toEqual(expect.any(Array))
     })
-    
+
     it('reverse individual words keeping original word order', () => {
         const sentenceArray = [ 't', 'h', 'e', ' ', 'e', 'a', 'g', 'l', 'e', ' ',
         'h', 'a', 's', ' ', 'l', 'a', 'n', 'd', 'e', 'd' ]
