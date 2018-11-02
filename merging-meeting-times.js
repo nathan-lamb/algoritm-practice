@@ -30,17 +30,9 @@ const mergeRanges = (times) => {
         }
     }
     mergedTimes[0].startTime = times[0].startTime
-    console.log(mergedTimes)
     return mergedTimes 
 }
 
 //Need to account for when there is a gap between the end time and the subsequent start time 
-
-mergeRanges([
-    { startTime: 2, endTime: 4 },
-    { startTime: 1, endTime: 3 },
-    { startTime: 4, endTime: 13 },
-    { startTime: 4, endTime: 12 }
-])
 
 module.exports = {mergeRanges}
