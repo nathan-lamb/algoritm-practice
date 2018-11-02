@@ -7,6 +7,12 @@
         {
             "type": "node",
             "request": "launch",
+            "name": "reverse-things",
+            "program": "${workspaceFolder}/reverse-string-inplace.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
             "name": "merging-meeting-times",
             "program": "${workspaceFolder}/merging-meeting-times.js"
         },
