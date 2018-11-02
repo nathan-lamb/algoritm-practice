@@ -31,8 +31,7 @@ describe('reverse strings and words', () => {
     it('reverse individual words keeping original word order', () => {
         const sentenceArray = [ 't', 'h', 'e', ' ', 'e', 'a', 'g', 'l', 'e', ' ',
         'h', 'a', 's', ' ', 'l', 'a', 'n', 'd', 'e', 'd' ]
-        expect(reverseWords(sentenceArray)).toEqual(expect.arrayContaining([ 'd', 'e', 'd', 'n', 'a', 'l', ' ', 's', 'a', 'h', ' ',
-        'e', 'l', 'g', 'a', 'e', ' ', 'e', 'h', 't' ]))
+        expect(reverseWords(sentenceArray)).toEqual(['e', 'h', 't', ' ', 'e', 'l', 'g', 'a', 'e', ' ', 's', 'a', 'h', ' ', 'd', 'e', 'd', 'n', 'a', 'l'])
     })
 })
 
