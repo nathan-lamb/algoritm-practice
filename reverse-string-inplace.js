@@ -28,6 +28,7 @@ const reverseWords = (array) => {
                 lastSpace = i + 1 
         }
     }
+    return reversedWordsArray
 }
 
 module.exports = {reverseString, reverseWords}
