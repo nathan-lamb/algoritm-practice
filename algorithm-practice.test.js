@@ -1,5 +1,6 @@
 const { mergeRanges } = require('./merging-meeting-times')
 const { reverseString, reverseWords } = require('./reverse-string-inplace')
+const { mergeArrays } = require('./merge-sorted-arrays')
 
 describe('mergeRanges tests', () => {
     it('mergeRanges is defined', () => {
@@ -32,6 +33,16 @@ describe('reverse strings and words', () => {
         const sentenceArray = [ 't', 'h', 'e', ' ', 'e', 'a', 'g', 'l', 'e', ' ',
         'h', 'a', 's', ' ', 'l', 'a', 'n', 'd', 'e', 'd' ]
         expect(reverseWords(sentenceArray)).toEqual(['e', 'h', 't', ' ', 'e', 'l', 'g', 'a', 'e', ' ', 's', 'a', 'h', ' ', 'd', 'e', 'd', 'n', 'a', 'l'])
+    })
+})
+
+describe('merge-sorted-arrays', () => {
+    it('returns a single array', () => {
+        expect(mergeArrays([],[])).toEqual([])
+    })
+
+    it('returns a sorted array', () => {
+        expect(mergeArrays([1, 3, 5], [4, 6, 7])).toEqual([1, 3, 4, 5, 6, 7])
     })
 })
 
